@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <Flex direction='column' h='100vh'>
+      <Flex direction='column' h='100%'>
         <HStack justify='space-between' p={6} px={8}>
           <HStack spacing={10}>
             <Text fontWeight='bold' fontSize='3xl'>
