@@ -164,11 +164,16 @@ function App() {
         >
           <VStack
             paddingLeft={{ base: 1, md: 6, lg: 8 }}
-            spacing={{ base: 6, md: 10, lg: 14 }}
+            spacing={{ base: 6, md: 10, lg: 12 }}
             align={{ base: 'center', md: 'center', lg: 'start' }}
-            w={{ base: '100%', md: '50%' }}
+            justify={{ base: 'center', md: 'center', lg: 'inherit' }}
+            w={{ base: '100%', md: '100%', lg: '50%' }}
           >
-            <Flex direction={{ base: 'row', md: 'column', lg: 'column' }} p={0}>
+            <Flex
+              direction={{ base: 'row', md: 'row', lg: 'column' }}
+              pt={{ base: 6, md: 10, lg: 8 }}
+              lineHeight={{ base: 1, md: 1, lg: 1 }}
+            >
               <Text
                 fontSize={{ base: '3xl', md: '5xl', lg: '8xl' }}
                 fontWeight='bold'
@@ -179,7 +184,7 @@ function App() {
               <Text
                 fontSize={{ base: '3xl', md: '5xl', lg: '8xl' }}
                 fontWeight='bold'
-                mt={{ base: 0, lg: '-8' }}
+                /*mt={{ base: 0, lg: '-8' }}*/
               >
                 Remote Work
               </Text>
@@ -205,7 +210,11 @@ function App() {
                 Learn More
               </Button>
             </Box>
-            <HStack spacing={10} pt={10} pb={{ base: '120px' }}>
+            <HStack
+              spacing={{ base: 2, md: 8, lg: 10 }}
+              pt={10}
+              pb={{ base: '120px' }}
+            >
               <img src='images/client-audiophile.svg' alt='client1' />
               <img src='images/client-databiz.svg' alt='client1' />
               <img src='images/client-maker.svg' alt='client1' />
